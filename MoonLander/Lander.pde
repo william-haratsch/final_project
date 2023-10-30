@@ -22,11 +22,6 @@
   }
   public void updateLander(){
    //translate(pos.array()[0], pos.array()[1]);
-   /*
-  if(pos.array()[0] >= 1100 || pos.array()[0] <= 0 || pos.array()[1] >= 713 || pos.array()[1] <= 0){
-    reset();
-  }
-  */
   //rocketAngle += rocketAngleSpeed;
   //rocketAngleSpeed /= 1.02;
   player.speed.add(player.acc);
@@ -54,6 +49,7 @@
     reset();
   }
   //size(1100, 713)
+  //lander hits the ground.
   if(player.pos.array()[1] >= (ground - 40)){
     //STOPPED HERE. CODE NOT FINISHED.
     //gameState = 2;
